@@ -1,0 +1,25 @@
+package project;
+
+import java.util.Scanner;
+
+public class Mins {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter the minutes");
+		@SuppressWarnings("resource")
+		Scanner sc= new Scanner(System.in);
+		int n=sc.nextInt();
+		int r=0,p=0,q=0;
+		r=n/525600;
+		p=n%525600;
+		q=p/1440;
+		System.out.println(n+"minutes is approximately"+r+"years and"+q+"days");
+		
+	}
+
+}
+//output
+enter the minutes
+3456789
+3456789minutes is approximately6years and210days
